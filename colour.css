@@ -1,0 +1,53 @@
+:root {
+    /* Light Mode Variables */
+
+    --primary-dark: #1e2a39;
+    --primary-light: #f5f8fa;
+
+    --primary-text: #ffffff;
+    --secondary-text: #495b6E;
+    --tertiary-text: #b0c4d8;
+
+    --text-hover: #4da8ff;
+    --select-text: #ff0000;
+    --hamberger: #3a86cc;
+    --main-div: #f0f4f8;
+  
+    /* Dark Mode Variables  */
+
+    --dark-primary-dark: #f5f8fa;
+    --dark-primary-light: #121212;
+
+    --dark-primary-text: #121212;
+    --dark-secondary-text: #a5a5a5;
+    --dark-tertiary-text: #606060;
+
+    --dark-text-hover: #80d8ff;
+    --dark-select-text: #ff5252;
+    --dark-hamberger: #82b1ff;
+    --dark-main-div: #181818;
+}
+
+body.light-mode{
+    --primary-dark: var(--primary-dark);
+    --primary-light: var(--primary-light);
+    --primary-text: var(--primary-text);
+    --secondary-text: var(--secondary-text);
+    --tertiary-text: var(--tertiary-text);
+    --text-hover: var(--text-hover);
+    --select-text: var(--select-text);
+    --hamberger: var(--hamberger);
+    --main-div: var(--main-div);
+}
+  
+body.dark-mode{
+    --primary-dark: var(--dark-primary-dark);
+    --primary-light: var(--dark-primary-light);
+    --primary-text: var(--dark-primary-text);
+    --secondary-text: var(--dark-secondary-text);
+    --tertiary-text: var(--dark-tertiary-text);
+    --text-hover: var(--dark-text-hover);
+    --select-text: var(--dark-select-text);
+    --hamberger: var(--dark-hamberger);
+    --main-div: var(--dark-main-div);
+}

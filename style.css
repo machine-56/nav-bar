@@ -1,0 +1,114 @@
+@import url(./colour.css);
+
+body {
+  height: 100vh;
+  background-color: var(--main-div);
+  color: var(--primary-text);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-light);
+  min-height: 15%;
+  border-bottom: 1px solid var(--primary-dark);
+}
+
+.icon img {
+  width: 50px;
+  margin: 5px;
+}
+.n-links{
+  margin-left: 5px;
+  padding: 5px;
+}
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--secondary-text);
+  text-decoration: none;
+  padding: 4px;
+  margin: 3px;
+  transition: all 0.2s ease-in-out;
+}
+ul li a:hover {
+  color: var(--text-hover);
+  border-bottom: 1px solid var(--text-hover);
+}
+ul li a:active {
+  color: var(--select-text);
+  border-bottom: 1px solid var(--select-text);
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}
+.n-links.active{
+  display: block;
+}
+
+@media (max-width: 766px) {
+
+  nav{
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .n-links, ul{
+    display: none;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  ul li{
+    padding: 2px;
+    margin: 5px;
+  }
+  .hamburger{
+    color: var(--hamberger);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 35px;
+    font-size: 25px;
+  }
+  .n-links.active, ul{
+    display: flex;
+  }
+}
+
+.main-div{
+  flex-grow: 1;
+  height: calc(100vh - 15%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-div);
+}
+
+.btn-outline-custom{
+  background-color: transparent;
+  border: 2px solid var(--primary-dark);
+  color: var(--primary-dark);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-custom:hover{
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+}
